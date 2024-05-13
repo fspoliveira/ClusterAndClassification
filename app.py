@@ -1,5 +1,3 @@
-# app.py
-
 from flask import Flask, request
 from flask_restx import Api, Resource, fields
 from model import CustomerModel
@@ -11,7 +9,7 @@ api = Api(app, version='1.0', title='Customer Cluster API',
 
 logging.basicConfig(level=logging.DEBUG)
 
-ns = api.namespace('clustering', description='Operations related to customer clustering')
+ns = api.namespace('Clustering', description='Operations related to customer clustering')
 
 model = CustomerModel('dataset/loan_default.csv')
 model.train_model()
