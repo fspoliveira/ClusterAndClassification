@@ -31,5 +31,5 @@ docker build -t customer-cluster .
 Depois execute
 
 ```bash
-docker run -d -p 5002:5002 --network bridge customer-cluster
+docker run -d -p 5002:5002 --network app_network customer-cluster
 ```
