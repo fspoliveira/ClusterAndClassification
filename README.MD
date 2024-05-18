@@ -25,11 +25,11 @@ Siga as instruções abaixo para colocar a aplicação Model Manager em funciona
 Abra o terminal e navegue até o diretório onde está o Dockerfile. Execute o comando abaixo para construir a imagem Docker do projeto:
 
 ```bash
-docker build -t cd customer-cluster .
+docker build -t customer-cluster .
 ```
 
 Depois execute
 
 ```bash
-docker run -d -p 5002:5002 --network bridge cd customer-cluster
+docker run -d -p 5002:5002 --network bridge customer-cluster
 ```
